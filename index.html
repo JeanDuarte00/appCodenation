@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Enviar Arquivo para Codenation</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <form
+      method="post"
+      enctype="multipart/form-data"
+      action="https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token=SEU_TOKEN"
+    >
+      <div class="input-group container">
+        <div class="custom-file">
+          <input type="file" class="custom-file-input" id="fileId" required />
+          <label class="custom-file-label" for="validatedInputGroupCustomFile"
+            >Qual arquivo enviar?</label
+          >
+        </div>
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">
+            Enviar para Codenation
+          </button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
